@@ -37,7 +37,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>register form</title>
+      <title>Sign Up</title>
       <!-- custom css file link  -->
       <link rel="stylesheet" href="css/style.css">
    </head>
@@ -61,7 +61,7 @@
             <input type="password" name="password" required placeholder="enter your password">
             <input type="password" name="cpassword" required placeholder="confirm your password">
             <input type="submit" name="submit" value="register now" class="form-btn">
-            <p>already have an account? <a href="login_form.php">login now</a></p>
+            <p>already have an account? <a href="login_form.php">Sign Up</a></p>
          </form>
       </div>
 
