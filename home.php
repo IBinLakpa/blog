@@ -57,11 +57,10 @@
                      // Wrap the content to the maximum width and replace line breaks with <br> tags
                      $content = str_replace("\n", "<br>", wordwrap($content, $maxWidth, "\n"));
                      echo "<section>
-                        <h3 id=#$id>$topic</h3>
+                        <h3 id=#$id><a href='post.php?post=$id'>$topic</a></h3>
                         <span>-By $by</span>
                         <div class='blog-content'>$content</div>
-                        <span>$timestamp</span>
-                        <span>#$id</span>
+                        <span>$timestamp<br>#$id</span>
                      </section>";
                   }
 
