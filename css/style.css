@@ -26,6 +26,7 @@
 }
 
 .container .content h3 span{
+   text-align:center;
    background: crimson;
    color:#fff;
    border-radius: 5px;
