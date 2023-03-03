@@ -19,7 +19,7 @@
       <div class="container">
          <div class="content">
             <?php
-               $sql = "SELECT blog_title, blog_content, user_id, timestamp FROM blog ORDER BY id DESC";
+               $sql = "SELECT id, blog_title, blog_content, user_id, timestamp FROM blog ORDER BY id DESC";
                // Execute the query and get the result
                $result = $conn->query($sql);
                // Check if there are any rows returned
@@ -27,6 +27,7 @@
                   // Loop through each row in the result set
                   while ($row = $result->fetch_assoc()) {
                         // Access the data from the current row
+                        $id=$row["id"];
                         $topic = $row["blog_title"];
                         $content = $row["blog_content"];
                         $user_id = $row["user_id"];
@@ -44,10 +45,11 @@
                         $content = str_replace("\n", "<br>", wordwrap($content, $maxWidth, "\n"));
                         // Do something with the data, such as print it out to the screen
                         echo "<section>
-                           <h3>$topic</h3>
+                           <h3 id=#$id>$topic</h3>
                            <span>-By $by</span>
                            <div class='blog-content'>$content</div>
                            <span>$timestamp</span>
+                           <span>#$id</span>
                         </section>";
                   }
                } else {
