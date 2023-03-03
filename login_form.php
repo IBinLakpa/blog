@@ -2,7 +2,6 @@
    @include 'config.php';
    session_start();
    if(isset($_POST['submit'])){
-      $username = mysqli_real_escape_string($conn, $_POST['username']);
       $email = mysqli_real_escape_string($conn, $_POST['email']);
       $pass = md5($_POST['password']);;
       $select = " SELECT * FROM users WHERE email = '$email' && password = '$pass'";
