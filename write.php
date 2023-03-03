@@ -1,7 +1,7 @@
 <?php
    @include 'config.php';
    session_start();
-   if(!isset($_SESSION['id'])){
+   if(!isset($_SESSION['name'])){
       header('location:login_form.php');
    }
    if(isset($_POST['submit'])){
