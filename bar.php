@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="css/bar.css">
 <header>
     <div>
-        <a href="home.php" class="home-btn">Home</a>
+        <a href="home.php?page=1#" class="home-btn">Home</a>
     </div>
         
     <?php
